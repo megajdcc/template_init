@@ -1,0 +1,1158 @@
+/*******************************************/
+/* Paneles Princpales administrar=tivos
+/*******************************************/ 
+ .body-panel{
+
+    height: 100vh !important;
+ 
+ }
+
+
+ .required{
+  color: red;
+  font-weight: 600;
+ }
+
+
+ /* top header */
+
+
+ .top-header{
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 0 0 auto !important;
+  /* height: 50px; */
+
+ }
+
+
+/* Logotipo del sistema */
+
+
+.logo-sistema{
+/* Code style */
+max-height: 50px;
+display   : flex;
+width     : auto;
+}
+
+.logo-sistema a{
+    width          : auto !important;
+    height         : 50px !important;
+    display        : flex;
+    padding        : 5px !important;
+    justify-content: center;
+    align-items    : center;
+}
+
+.logo-sistema a img{
+  height: 40px !important;
+  max-height: 40px !important;
+  width: auto !important;
+}
+
+
+/* Opciones de usuario */
+
+.opciones-usuario{
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+ /* Userbox */
+.userbox {
+    display: inline-block;
+    margin: 0px 0px 0 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.userbox > a {
+    text-decoration: none;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.userbox a:hover {
+    text-decoration: none;
+}
+
+.userbox .profile-info,
+.userbox .profile-picture,
+.userbox .profile-info-welcome {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.userbox .profile-picture img{
+    width: 35px;
+    color: transparent;
+}
+
+.userbox .profile-info,
+.userbox .profile-info-welcome{
+    margin: -3px 25px 0 10px;
+}
+
+.userbox .profile-info-welcome span,
+.userbox .profile-info-welcome i
+{
+    color: #FF876C;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.userbox .profile-info-welcome span,
+.userbox .profile-info-welcome i
+.userbox .name,
+.userbox .role {
+    display: block;
+}
+.userbox-welcome .show{
+    color: black !important;
+}
+
+.userbox .name {
+    color: #000011;
+    font-size: 12.8px;
+    font-size: 0.8rem;
+    line-height: 17.6px;
+    line-height: 1.1rem;
+}
+
+.userbox .role {
+    color: #ACACAC;
+    font-size: 11.2px;
+    font-size: 0.7rem;
+    line-height: 11.2px;
+    line-height: 0.7rem;
+}
+
+.userbox .custom-caret {
+    color: #000011;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.userbox .custom-caret:before {
+    content: "\f107";
+}
+
+@media only screen and (max-width: 767px) {
+    .userbox .name,
+    .userbox .role {
+        /* max-width: 68px; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+/* Userbox - Open */
+.userbox.show > a {
+    position: relative;
+    z-index: 993;
+}
+
+.userbox.show > a .custom-caret:before {
+    content: "\f106";
+}
+
+.userbox.show .dropdown-menu {
+    border: none;
+    -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    left: -11px !important;
+    padding: 45px 10px 0;
+    /* top: -10px !important; */
+    -webkit-transform: none !important;
+    transform: none !important;
+    width: 100%;
+    z-index: 992;
+}
+
+.userbox.show .dropdown-menu li {
+    margin-bottom: 5px;
+}
+/* 
+.userbox.show .dropdown-menu a {
+    border-radius: 2px;
+    color: #7d7d7d;
+    display: block;
+    line-height: 20.8px;
+    line-height: 1.3rem;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+ */
+.userbox.show .dropdown-menu a i {
+    font-size: 14.4px;
+    font-size: 0.9rem;
+}
+
+.userbox.show .dropdown-menu a:hover {
+    background: #CCC;
+    color: #FFF;
+}
+
+.userbox.show .dropdown-menu i {
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+/* Userbox - Mobile */
+@media only screen and (max-width: 767px) {
+    .userbox {
+        float: left;
+        margin: 0px 0 0 12px;
+        position: relative;
+    }
+
+    .userbox:after {
+        /* background: #E9E9E6; */
+        background: transparent;
+        content: '';
+        height: 63px;
+        margin: 0;
+        position: absolute;
+        right: -21px;
+        top: -18px;
+        width: 1px;
+    }
+
+    .userbox .profile-picture {
+        /* display: none; */
+    }
+
+    .userbox.show .dropdown-menu {
+        left: -5px !important;
+        padding: 43px 0 0 0;
+        position: absolute;
+    }
+}
+
+/* COntent action users */
+
+
+.conten-action-user a {
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conten-action-user a i{
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Migajas breadcrumb*/
+.breadcrumb-item, 
+.breadcrumb-item{
+  font-size: 14pt !important;
+}
+
+/* Menu Principal */
+
+.menu-principal{
+ 
+  display: flex;
+  background-color: #444444;
+  width: auto !important;
+  z-index: 800 !important;
+  align-self: stretch;
+  transition: 30ms ease;
+  position: relative;
+}
+
+.mostrar-menu{
+  display: flex;
+  transition: 30ms ease;
+  position: absolute;
+  min-height: 50vh;
+}
+
+.ocultar-menu{
+  display: none;
+  transition: 30ms ease;
+  min-height: 50vh;
+}
+
+
+.btn-menu-show{
+  position: relative;
+  /* background: red !important; */
+  padding: 0;
+  margin: 0;
+}
+.btn-menu-show:hover{
+  transform: scale(.9, .9);
+}
+
+.btn-menu-show i {
+  font-size: 20pt;
+  /* background: red; */
+}
+
+@media(max-width:720px){
+  
+  .menu-principal{
+    position: absolute !important;
+    height: 100%;
+
+  }
+
+}
+
+.menu-principal .menu-princ-1{
+  flex: 0 1 60px !important;
+  background: #363636 !important;
+  width: 60px;  
+}
+.menu-princ-1 ul{
+  padding: 0px !important;
+
+}
+.menu-princ-1 ul li {
+  
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+ }
+ .menu-princ-1 ul li a {
+  padding: .5rem;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid grey;
+  text-decoration: none;
+  height: 50px;
+ }
+
+ .menu-princ-1 ul .active{
+    background-color: #019CDF;
+ }
+
+.menu-princ-1 ul li a:hover > i{
+  font-size: 22pt;
+  animation: movimiento-icon .5s ease-in-out infinite ;
+}
+
+@keyframes movimiento-icon {
+
+  
+  to {
+    font-size: 20pt;
+  }
+
+  from{
+    font-size: 22pt;
+    transition: 2s ease;
+  }
+}
+
+.menu-principal .menu-princ-2{
+
+  background-color: #444444 !important;
+  height: auto !important;
+  width: 200px;
+  padding: 0px;
+
+}
+
+.menu-princ-1 a,
+.menu-princ-2 a {
+
+  color: white !important;
+
+}
+ 
+ .menu-princ-1 ul li a i{
+    font-size: 20pt;
+    color: white !important;
+ }
+
+.menu-princ-2 .icono-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+.icono-menu i{
+  font-size: 18pt;
+}
+
+.menu-princ-2 .menu-titles{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: start;
+  flex-direction: column;
+  line-height: 14px;
+  
+}
+.menu-titles .titulo{
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.menu-titles .subtitulo{
+  font-size: 8pt;
+}
+
+.menu-princ-2 ul li{
+  height: auto;
+  min-height: 50px;
+  height: 50px;
+  background: #444444;
+  list-style: none;
+  padding: 0px;
+  margin: 0px !important;
+ }
+ .menu-princ-2 ul li{
+  width: 100%;
+ }
+
+ .menu-princ-2 ul li a{
+  /* padding: .5rem; */
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid grey;
+  text-decoration: none;
+  height: 50px;
+ }
+
+ .menu-princ-2 ul .active{
+    background-color: #019CDF;
+ }
+
+/*******************************************************/
+/*                 LOGIN PANEL
+/*******************************************************/
+
+
+.login_panel{
+    background-image: url('/img/fondo_login.jpg');
+    height: 100vh !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+} 
+
+.backdrop-color{
+  background-color: rgba(45,117,218,0.4);
+  height: 100% !important;
+  width: 100% !important;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+
+}
+
+.content-login{
+
+  width: 95% !important;
+  height: auto;
+  max-width: 95%;
+  background-color: white;
+  margin:0px auto 0px auto !important;
+  border-radius: 5px;
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  overflow-y: auto;
+  
+}
+
+.login_information::-webkit-scrollbar{
+  display: none !important;
+}
+
+.login_information{
+
+  flex: 1 0 320px;
+  
+  height: auto !important;
+  /* border-radius: 5px 5px 0px 0px; */
+  /* min-height: 100% !important; */
+  width: 100%;
+
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.login_into{
+  flex: 1 1 50%;
+  min-height: 250px;
+  border-radius: 0px 0px 5px 5px;
+  width: 100%;
+  padding: 25px 0px !important;
+}
+
+.content-login .container-fluid {
+  /* padding: 0px !important; */
+  margin: 0px !important; 
+  width: 100% !important;
+}
+
+@media (min-width: 596px){
+  .content-login{
+    width: 80% !important;
+    min-height: 70% !important;
+    max-width: 80%;
+    background-color: white;
+    margin:0px auto 0px auto !important;
+    position: relative;
+
+  }
+
+
+}
+
+@media (min-width: 798px){
+
+
+  .content-login{
+    width: 90% !important;
+    max-width: 90%;
+    background-color: white;
+    margin:0px auto 0px auto !important;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .login_information{
+
+    flex: 2 1 auto;
+
+    height: 100% !important;
+    /* border-radius: 5px 0px 0px 5px; */
+    /* min-height: 100% !important; */
+    width:auto;
+  }
+
+  .login_into{
+     flex: 0 0 300px;
+     height: auto;
+     border-radius: 0px 5px 5px 0px;
+      width: auto;
+  }
+
+  .content-logo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px !important;
+    margin-bottom: 5px;
+  }
+  
+  
+}
+
+.login_into{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around !important;
+}
+
+.content-logo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  
+}
+
+.content-logo img{
+  width: auto ;
+  height: 70px !important;
+}
+
+.title-login{
+  text-align: center !important;
+  margin-bottom: 30px;
+}
+
+.navbar-information{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center !important;
+  margin-top: 15px;
+  position: absolute;
+  right: auto;
+}
+
+.content-info-negocio{
+  background-image: url('/img/fondo_login_negocio.svg');
+  background-size:  cover;
+  background-repeat: no-repeat;
+  background-position:center center; 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+
+@media (min-width:1024px){
+  
+  .content-info-negocio{
+    background-size:100%;
+  }
+
+}
+
+.list-group a:hover{
+  color: white;
+}
+
+@media (min-width: 798px){
+  
+  .navbar-information{
+      right: 300px;
+    }
+
+  .list-group .active{
+      border-radius: 20px 0px 0px 20px;
+      background-color: white !important;
+      margin-right: -10px;
+      color: black;
+      border: 0px;
+      box-shadow: -1px 3px 10px 0px ;
+    }
+    
+    .content-text h2{
+      font-size: 24pt;
+      /* line-height: 15px !important; */
+      margin-left: 0px;
+      /* font-weight: bold; */
+    }
+
+    .content-text p {
+      font-size: 17pt !important;
+      /* margin-left: 50px !important; */
+      /* font-weight: bold; */
+      width: 450px !important;
+  }
+  
+  .list-group .active{
+      border-radius: 20px 0px 0px 20px !important;
+  }
+
+  .content-text{
+    margin-top: 0px !important;
+    margin: 40px 0px auto 20px !important;
+    padding-right: 10px;
+    text-align: justify !important;
+  }
+
+
+}
+
+@media (min-width: 798px){
+  .text-md-white{
+    color: white !important;
+  }
+    .border-text{
+      text-shadow: -0px -2px 0 #000;
+  }
+}
+
+@media (min-width: 998px){
+
+  .content-text h2{
+      font-size: 44pt !important;
+      /* margin-left: 100px !important; */
+      /* font-weight: bold; */
+    }
+  .content-text p {
+      width: 500px !important;
+      /* margin-left: 100px !important; */
+  }
+
+  .content-text{
+    margin-top: 0px !important;
+    margin: 60px 0px auto 100px !important;
+    padding-right: 10px;
+    text-align: justify !important;
+  }
+}
+
+@media (min-width: 1200px){
+   .content-text{
+    margin: 60px 0px auto 200px !important;
+    padding-right: 10px;
+    text-align: justify !important;
+  }
+}
+
+.list-group .active{
+      border-radius: 0px 20px 20px 0px;
+      background-color: white;
+      margin-right: -10px;
+      color: black;
+      border: 0px;
+  }
+
+.bg-transparent{
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+.content-text h2{
+  font-size: 24pt;
+  margin-left: 0px;
+
+  font-family: 'Nexa Light';
+
+}
+
+
+.content-text p {
+  font-size: 12pt;
+   margin-left: 0px;
+  width: 90% !important;
+  font-family: 'Nexa Light';
+}
+
+.text-white{
+  color: white;
+}
+
+.text-black{
+  color: black;
+}
+
+.text-xs-black{
+  color: black;
+}
+
+.content-text{
+  /* background-color: rgba(0,0,0,0.3); */
+  margin-bottom: auto;
+  margin-top: 40px !important ;
+  text-align: center;
+}
+.font-weight-bold{
+  font-weight: bold;
+}
+
+.mostrar{
+  display: flex !important;
+}
+
+
+
+
+/* Estilos de Vistas internas COMPONENTES ... */
+
+.collapse-busqueda-container{
+    position: absolute;
+    width: 320px;
+    right: 0px;
+    left: auto;
+    top: 50px;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    box-shadow: -3px 3px 10px 1px;
+}
+
+
+
+
+/*********************************************/
+/* PANEL DEL PERFIL DEL HOTEL
+/*********************************************/
+ 
+
+ .img-portada{
+  width: 100%;
+  padding: 0px;
+ }
+ .kv-hotel-portada{
+  width: 320px;
+  margin: 0px !important;
+  padding: 0px !important;
+ }
+
+.file-preview{
+  padding: 0px;
+}
+.file-drop-zone{
+  padding: 2px 2px 2px 2px;
+  margin: 0px;
+  /* width: 330px; */
+}
+
+ .input-portada{
+    border-radius: 2px;
+    width: 320px !important;
+ }
+
+.ico-upload{
+  position: absolute;
+  background-color: #019CDF;
+  padding: 15px;
+  border-radius: 100%;
+  margin: 0px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  color: white !important;
+  font-size: 15pt;
+  top: 10px;
+  left: auto;
+  right: 0px;
+  cursor: pointer;
+  border: .5px outset #019CDF;
+
+}
+
+#map-canvas {
+  height: 200px;
+  margin: 0px 0px 30px 0px; 
+}
+
+#map-canvas .form-control {
+    right: 42px !important;
+    top: 20px !important;
+    width: 300px !important; 
+  }
+
+.logo-hotel-perfil{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.logo-hotel-perfil img{
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 200px;
+  height: 70px;
+  object-fit: scale-down;
+  border-radius: 5%;
+  /* border: 0.5px solid rgba(0,0,0,0.3); */
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,.3);
+  margin-top: 0px;
+  position: absolute;
+  z-index: 4;
+}
+
+.logo-hotel-perfil::after{
+  content:"";
+  background: url('/storage/change_icon.jpg');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: -15px;
+  top: -20px;
+  margin-right: 0;
+  z-index: 5;
+}
+
+.logo-hotel-perfil img:hover{
+  /* transform: scale3d(1.2, 1.2, 1.2); */
+  cursor: pointer;
+}
+
+.hotel-perfil label{
+  font-size:16pt;
+  font-weight: bold; 
+}
+
+.card-body{
+  /* height: 70vh; */
+  /* overflow-y: auto; */
+}
+
+
+.sinconfirmar{
+  background: grey !important;
+  padding: 2px 1rem;
+  border-radius: 5px;
+  color: white;
+  box-shadow: -2px 2px 1px 1px rgba(0,0,0,0.2);
+  border: .5px inset;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.sinconfirmar:hover{
+  opacity: 1;
+}
+
+.consumada{
+  background: #3EC0DD !important;
+  padding: 2px 1rem;
+  border-radius: 5px;
+  color: white;
+  box-shadow: -2px 2px 1px 1px rgba(0,0,0,0.2);
+  border: .5px inset;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.consumada:hover{
+  opacity: 1;
+}
+
+.confirmada{
+  background: #3D8905 !important;
+  padding: 2px 1rem;
+  border-radius: 5px;
+  color: white;
+  box-shadow: -2px 2px 1px 1px rgba(0,0,0,0.2);
+  border: .5px inset;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.confirmada:hover{
+  opacity: 1;
+}
+
+.cancelada{
+  background: #C32020 !important;
+  padding: 2px 1rem;
+  border-radius: 5px;
+  color: white;
+  box-shadow: -2px 2px 1px 1px rgba(0,0,0,0.2);
+  border: .5px inset;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.cancelada:hover{
+  opacity: 1;
+}
+
+
+/*******************************************/
+/* Vizor bank
+/******************************************/
+ 
+ .carta-notify{
+  box-shadow: -0.9px 2px 8px 1px grey;
+  padding: 0 !important;
+  width: 220px;
+  height: 70px;
+  /* margin: 0px 5px; */
+ }
+
+.carta-notify .icon{
+  background: rgba(0,0,0,0.5);
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.carta-notify .icon span{
+  font-size: 20pt;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.carta-notify .content{
+  padding: 5px 10px;
+  color: white !important;
+  font-weight: bolder;
+  line-height: 19px;
+  display: flex !important;
+  justify-content: center;
+  align-items: start;
+
+}
+.carta-notify .content strong{
+  font-size: 16pt;
+}
+.carta-notify .content p{
+  font-size: 12pt;
+  margin: 0px;
+}
+
+
+.contenedor-recarga{
+    position: relative;
+  }
+
+  .container-recarga{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #8080808f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+  }
+  
+
+  /***************************/
+  /*    Carta Invitacion
+  /***************************/
+
+.carta-invitacion p{
+  font-size: 17pt;
+  color: #292424;
+  line-height: 30px;
+  overflow-wrap:normal;
+}
+.carta-invitacion .cabecera{
+      height: 35vh;
+      background: grey;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+  }
+
+  .portada-invitacion{
+    object-fit: cover !important;
+    object-position: center 30%;
+    flex:1 1 auto;
+    height: 100%;
+    position: relative;
+  }
+
+
+  .cabecera::after{
+    content: 'Hotel 'attr(data-hotel);
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0px;
+    color: white;
+    font-size: 46pt;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Myriad Bold' !important;
+    font-weight: 500;
+  }
+
+  .dialogoRegistro{
+    position: absolute ;
+    max-height: 90vh !important;
+    overflow-y: auto;
+    margin-top: 5vh !important;
+    border-radius: 10px 10px 10px 10px !important;
+    z-index: 2;
+  }
+
+  .pac-logo{
+    z-index: 5000 !important;
+  }
+
+  .pac-logo .pac-item{
+    cursor: pointer;
+  }
+
+  .dialogoRegistro .el-dialog__header{
+    display: none;
+  }
+
+   .dialogoRegistro .el-dialog__body{
+    padding: 1.5rem 3rem  !important;
+   }
+    
+  .custom-file-input:lang(es) ~ .custom-file-label::after{
+    content: 'Buscar';  
+   }
+
+
+
+.portada-negocio img{
+    width: 100%;
+    max-height: 400px;
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center top;
+    position: relative;
+}
+
+
+.dialogo-chat{
+  z-index: 700 !important;
+}
+
+
+/* .detail-banner{
+  position: relative;
+  
+}
+
+.portada-negocio{
+
+  display: flex;
+  justify-content: center;
+}
+
+.portada-negocio .el-upload::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  background-color: rgba(0,0,0,0.51);
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-radius: 10px; 
+} */
+
+.login_into{
+  min-height: 200px;
+  height: auto;
+}
+
+.content-login{
+  height: auto;
+  flex-direction: row;
+}
+
+
+@media (min-width:762px){
+  .content-login{
+    height: 90vh;
+    /* flex-direction: column; */
+  }
+}
+

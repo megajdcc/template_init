@@ -1,0 +1,66 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+// OverlayScrollbars
+@import '~overlayscrollbars/css/OverlayScrollbars.css';
+
+// iCheck
+@import '~icheck-bootstrap/icheck-bootstrap.css';
+
+// AdminLTE
+@import '../../vendor/almasaeed2010/adminlte/dist/css/adminlte.css';
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+
+
+// Bootstrap-vue
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+
+/* Bootstrap File input*/
+@import '~bootstrap-fileinput/scss/fileinput';
+@import '~bootstrap-fileinput/scss/themes/explorer-fa/theme';
+@import '~bootstrap-fileinput/scss/themes/explorer-fas/theme';
+
+
+/*DataTables*/
+
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.min.css';
+@import '~datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css';
+
+
+.nav-item .nav-link{
+
+	display: block !important;
+}
+
+
+[class*='sidebar-dark-'] .nav-sidebar > .nav-item.menu-open > .nav-link{
+	background-color: $blue;
+   color: white;
+}
+
+
+@media (max-width: 460px){
+	.el-dialog{
+		width:100% !important;
+	}
+}
+
+
+
+/* jqueryConfirm */ 
+// @import '~jquery-confirm/dist/jquery-confirm.min.css'; 
+// @import '~jquery-ui/themes/base/all.css';
+// @import '~select2/src/scss/core';
+// @import 'owl.carousel';
+// @import '~bootstrap-star-rating/css/star-rating.css';
+// @import '~bootstrap-star-rating/themes/krajee-svg/theme.min.css';
+// @import '~sweetalert2/src/sweetalert2';

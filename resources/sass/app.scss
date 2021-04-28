@@ -1,0 +1,105 @@
+@import 'import';
+
+small,
+label,
+p,
+h1,h2,h3,h4,h5,h6,
+span,
+strong,textarea{
+	word-break: normal;
+}
+
+p{
+	font-size: 14pt;
+	font-family: $font-family-roboto;
+}
+
+body{
+	height: 100vh !important;
+	font-family: $font-family-roboto;
+}
+
+small,
+label,
+p,
+h1,h2,h3,h4,h5,h6,
+span,
+strong,textarea{
+	word-break: normal;
+	font-family: $font-family-roboto;
+}
+
+p{
+	font-size: 14pt;
+	
+}
+
+
+
+.bg-dark{
+	background-color: $gris_oscuro;
+}
+
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+    background-color: $agua;
+}
+
+
+.nav-item .nav-link{
+	display: block !important;
+}
+
+[class*='sidebar-light-'] .nav-sidebar > .nav-item.menu-open > .nav-link{
+	background-color: $blue;
+   color: black;
+}
+
+
+@media (max-width: 460px){
+	.el-dialog{
+		width:100%;
+	}
+}
+
+
+
+@media (max-width: 720px){
+	.el-dialog{
+		width:80%;
+	}
+}
+
+
+.dialogo-chat{
+	z-index:1040 !important;
+	.el-dialog__header{
+		display: none !important;
+	}
+}
+
+.content-wrapper{
+	min-height: 450px !important
+}
+
+.imagen-upload{
+	
+	height:300px;
+
+	.el-upload{
+
+		height: 100%;
+
+		img{
+			object-fit:contain !important;
+		}
+	
+	}
+
+}
+
+.logo-xs{
+	border-radius: 5px;
+}
+
+
+@import 'especificos.scss';

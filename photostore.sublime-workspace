@@ -1,0 +1,1347 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"permisos",
+				"permisos_registrados"
+			],
+			[
+				"push",
+				"pushVenta"
+			],
+			[
+				"Venta",
+				"VentaPublicacion"
+			],
+			[
+				"confi",
+				"confirmarVenta"
+			],
+			[
+				"cancelra",
+				"cancelarVenta"
+			],
+			[
+				"btn-outlin",
+				"btn-outline-primary"
+			],
+			[
+				"Compra",
+				"ComprasTienda"
+			],
+			[
+				"monto",
+				"monto_descontar"
+			],
+			[
+				"saldo",
+				"saldo_tp"
+			],
+			[
+				"respo",
+				"responsable"
+			],
+			[
+				"show",
+				"showCompraCompletada"
+			],
+			[
+				"cargarVenta",
+				"cargarVentasTienda"
+			],
+			[
+				"NuevaVenta",
+				"NuevaVentaTienda"
+			],
+			[
+				"strto",
+				"strtoupper〔function〕"
+			],
+			[
+				"Eve",
+				"Events"
+			],
+			[
+				"Auth",
+				"Auth::user\tGet the currently authenticated user."
+			],
+			[
+				"administra",
+				"$administradores〔variable〕"
+			],
+			[
+				"model",
+				"$model_id〔variable〕"
+			],
+			[
+				"admini",
+				"$administradores〔variable〕"
+			],
+			[
+				"get",
+				"getEmpleados"
+			],
+			[
+				"comprar",
+				"comprarPublicacion"
+			],
+			[
+				"verificar",
+				"verificarSaldoHotel"
+			],
+			[
+				"tipo",
+				"tipo_usuario"
+			],
+			[
+				"content",
+				"content-imagenes"
+			],
+			[
+				"over",
+				"overflow-x: 〔property〕"
+			],
+			[
+				"Publicacion",
+				"PublicacionController"
+			],
+			[
+				"negocios",
+				"negocios_afiliados"
+			],
+			[
+				"publicaicon",
+				"publicacion_id"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"Schem",
+				"Schema::table-update\tUpdate an existing table"
+			],
+			[
+				"cargar",
+				"cargarPreguntas"
+			],
+			[
+				"preu",
+				"preguntas〔variable〕"
+			],
+			[
+				"seleccion",
+				"seleccionarFoto"
+			],
+			[
+				"garan",
+				"garantiaOpcion"
+			],
+			[
+				"title",
+				"titleEnvio"
+			],
+			[
+				"font-wi",
+				"font-weight-bold\t especificos.css"
+			],
+			[
+				"Re",
+				"Requerimientos"
+			],
+			[
+				"sele",
+				"seleccionarFoto"
+			],
+			[
+				"object",
+				"object-fit:contain"
+			],
+			[
+				"pad",
+				"padding:1px"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"img",
+				"img-miniatura"
+			],
+			[
+				"color",
+				"color_seleccionado"
+			],
+			[
+				"imagen",
+				"imagenColor"
+			],
+			[
+				"cate",
+				"categoria"
+			],
+			[
+				"filtro",
+				"filtroTienda〔namespace〕"
+			],
+			[
+				"rango",
+				"rango_precio"
+			],
+			[
+				"aplicar",
+				"aplicarFiltro"
+			],
+			[
+				"publica",
+				"publicacion〔variable〕"
+			],
+			[
+				"filso",
+				"filtroTienda〔namespace〕"
+			],
+			[
+				"fltro",
+				"filtroTienda〔namespace〕"
+			],
+			[
+				"aplo",
+				"aplicarFiltroTienda"
+			],
+			[
+				"el",
+				"el-carousel__container"
+			],
+			[
+				"mark",
+				"marks"
+			],
+			[
+				"publicac",
+				"publicacion"
+			],
+			[
+				"precio",
+				"precioMasAlto"
+			],
+			[
+				"publicacone",
+				"publicacionesCategoria"
+			],
+			[
+				"Listado",
+				"ListadoTienda"
+			],
+			[
+				"categroia",
+				"categoria_id"
+			],
+			[
+				"Filtro",
+				"FiltroTienda"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"ofrece",
+				"ofrecer_envios"
+			],
+			[
+				"text",
+				"textos"
+			],
+			[
+				"update",
+				"updateProducto"
+			],
+			[
+				"prdo",
+				"productos"
+			],
+			[
+				"sin",
+				"sinStock"
+			],
+			[
+				"name",
+				"$name_original〔variable〕"
+			],
+			[
+				"ofrecer",
+				"ofrecer_retiros"
+			],
+			[
+				"marca",
+				"marca_id"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"activar",
+				"activarPublicacion"
+			],
+			[
+				"publicar",
+				"publicarSimilar"
+			],
+			[
+				"pausar",
+				"pausarPublicacion"
+			],
+			[
+				"modific",
+				"modificarPublicacion"
+			],
+			[
+				"unidad",
+				"unidades"
+			],
+			[
+				"el-icon",
+				"el-icon-arrow-up"
+			],
+			[
+				"c",
+				"collapse.vue"
+			],
+			[
+				"remove",
+				"removeClass〔function〕"
+			],
+			[
+				"limiar",
+				"limpiarPublicacion"
+			],
+			[
+				"categoria",
+				"categoria_id"
+			],
+			[
+				"array_",
+				"array_search"
+			],
+			[
+				"quitar",
+				"quitarCosteEnvio"
+			],
+			[
+				"datos",
+				"datos_envio"
+			],
+			[
+				"colores",
+				"coloresSeleccionados"
+			],
+			[
+				"wi",
+				"width\t.width()"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"dialo",
+				"dialogoImageUrl"
+			],
+			[
+				"colo",
+				"coloresSeleccionados"
+			],
+			[
+				"colore",
+				"coloresSeleccionados"
+			],
+			[
+				"webkit-text",
+				"-webkit-text-stroke: 〔property〕"
+			],
+			[
+				"ofre",
+				"ofrecer_envios"
+			],
+			[
+				"ofree",
+				"ofrecer_retiros"
+			],
+			[
+				"tipo_p",
+				"tipo_publicacion"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"wid",
+				"width:160px"
+			],
+			[
+				"fa-angle",
+				"fa-angle-right\t font-awesome.min.css"
+			],
+			[
+				"publicacion",
+				"publicacion_id"
+			],
+			[
+				"sub",
+				"submenu"
+			],
+			[
+				"guardar",
+				"guardarModelo"
+			],
+			[
+				"eliminar",
+				"eliminarModelo"
+			],
+			[
+				"modelo",
+				"modelo_id"
+			],
+			[
+				"Marca",
+				"MarcaController"
+			],
+			[
+				"capt",
+				"capturarMarca"
+			],
+			[
+				"clear",
+				"clearMarca"
+			],
+			[
+				"categor",
+				"categoria_id"
+			],
+			[
+				"module",
+				"modules"
+			],
+			[
+				"sub_categoia",
+				"sub_categorias"
+			],
+			[
+				"sub_Cte",
+				"sub_categorias"
+			],
+			[
+				"sub_",
+				"sub_categorias"
+			],
+			[
+				"subC",
+				"sub_categorias"
+			],
+			[
+				"editar",
+				"editarCategoria"
+			],
+			[
+				"create",
+				"create.vue"
+			],
+			[
+				"Categoria",
+				"CategoriaProducto"
+			],
+			[
+				"isN",
+				"is_null"
+			],
+			[
+				"sub_servio",
+				"sub_servicios"
+			],
+			[
+				"Servicio",
+				"ServicioController"
+			],
+			[
+				"set",
+				"setServicios"
+			],
+			[
+				"servicio",
+				"servicio_id"
+			],
+			[
+				"venta",
+				"venta_id"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"Fav",
+				"FavoritoUsuarios"
+			],
+			[
+				"usuario",
+				"usuario_id"
+			],
+			[
+				"pro",
+				"$productoCategoria〔variable〕"
+			],
+			[
+				"Producto",
+				"ProductoCategoriaController"
+			],
+			[
+				"catego",
+				"categorias〔variable〕"
+			],
+			[
+				"find",
+				"findIndex"
+			],
+			[
+				"producto",
+				"producto-categoria"
+			],
+			[
+				"Procu",
+				"ProductoCategoria"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<template>\n\n\t<div class=\"\" v-loading=\"loading\" element-loading-spinner=\"spinner-grow\">\n\t\t\t<h2>Este es el home de PhotoStore</h2>\n\t</div>\n\n\n</template>\n\n<script>\n\n\timport {mapState} from 'vuex';\n\n\texport default{\n\t\n\t\tcomputed:{\n\t\t\t...mapState(['loading']),\n\t\t\t...mapState('usuario',['usuario']),\n\t\t}\n\t\n\t}\n\n</script>",
+			"file": "resources/js/views/home.vue",
+			"file_size": 313,
+			"file_write_time": 132639474252773656,
+			"settings":
+			{
+				"buffer_size": 314,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "database/seeders/UserSeeder.php",
+			"settings":
+			{
+				"buffer_size": 1112,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/spatie/laravel-permission/src/Models/Role.php",
+			"settings":
+			{
+				"buffer_size": 4867,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/spatie/laravel-permission/src/Traits/HasPermissions.php",
+			"settings":
+			{
+				"buffer_size": 14763,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/js/components/layouts/cabecera.vue",
+			"settings":
+			{
+				"buffer_size": 927,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"liv",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"live",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"livere",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"paca",
+				"Package Control: List Packages"
+			],
+			[
+				"view men",
+				"View: Toggle Menu"
+			],
+			[
+				"liveRe",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"livee",
+				"LiveReload: Help"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"liver",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: lis",
+				"Package Control: Install Package"
+			],
+			[
+				"li",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 314.0,
+		"history":
+		[
+			"clear",
+			"cls",
+			"cl",
+			"clear",
+			"limpiarFiltro()",
+			"help",
+			"echo $valor = 'Hola'",
+			"echo $valor",
+			"php",
+			"ls -l",
+			"dir",
+			"cd /",
+			"ls -l",
+			"cd /",
+			"clear",
+			"./hello",
+			"go build hello.go",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jdcc/projectsweb/Mario/StorePhots",
+		"/home/jdcc/projectsweb/Mario/StorePhots/app",
+		"/home/jdcc/projectsweb/Mario/StorePhots/app/Models",
+		"/home/jdcc/projectsweb/Mario/StorePhots/bootstrap",
+		"/home/jdcc/projectsweb/Mario/StorePhots/database",
+		"/home/jdcc/projectsweb/Mario/StorePhots/database/seeders",
+		"/home/jdcc/projectsweb/Mario/StorePhots/storage",
+		"/home/jdcc/projectsweb/Mario/StorePhots/storage/logs"
+	],
+	"file_history":
+	[
+		"/home/jdcc/projectsweb/Mario/StorePhots/storage/logs/laravel.log",
+		"/home/jdcc/projectsweb/Mario/StorePhots/vendor/spatie/laravel-permission/src/Traits/HasPermissions.php",
+		"/home/jdcc/projectsweb/Mario/StorePhots/resources/views/home.blade.php",
+		"/home/jdcc/projectsweb/Mario/StorePhots/resources/views/vendor/adminlte/master.blade.php",
+		"/home/jdcc/projectsweb/Mario/StorePhots/config/adminlte.php",
+		"/home/jdcc/projectsweb/infochannel/app/Notifications/ConfirmarCompraVentaInfochannel.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/tienda/CompraTienda.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/tienda/DetailsProduct.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/tienda/tienda.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/components/app.vue",
+		"/home/jdcc/projectsweb/infochannel/app/Events/NuevaVentaTienda.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/modules/tienda/publicacion.js",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Negocio/Negocio.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Tienda/VentaPublicacion.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Hotel/Hotel.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/tienda/ShowCompraTienda.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/index.js",
+		"/home/jdcc/projectsweb/infochannel/app/Notifications/GraciasPorComprarTiendaInfochannel.php",
+		"/home/jdcc/projectsweb/infochannel/config/adminlte.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Hotel/Cuenta/Movimiento.php",
+		"/home/jdcc/projectsweb/infochannel/storage/logs/laravel.log",
+		"/home/jdcc/projectsweb/infochannel/app/Listeners/informarVentaTienda.php",
+		"/home/jdcc/projectsweb/infochannel/app/Notifications/VentaTiendaInfochannel.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Support/Facades/Notification.php",
+		"/home/jdcc/projectsweb/infochannel/routes/channels.php",
+		"/home/jdcc/projectsweb/infochannel/app/Notifications/GraciasPorComprar.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Tienda/Publicacion.php",
+		"/home/jdcc/projectsweb/infochannel/app/Providers/EventServiceProvider.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/modules/tienda/color.js",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/home/jdcc/projectsweb/infochannel/database/migrations/2021_04_24_181417_create_venta_publicacions_table.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/color/Colores.vue",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Tienda/Producto.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Hotel/Cuenta/EstadoCuenta.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/tienda/ListadoTienda.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/publicaciones/publicaciones.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/components/collapse.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/router/index.js",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/publicaciones/show.vue",
+		"/home/jdcc/projectsweb/infochannel/app/Models/OrdenPago.php",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/UserController.php",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/HomeController.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Rol.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/User.php",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/Hotel/PublicacionController.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/bootstrap.js",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/Infochannel/Tienda/PublicacionController.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Tienda/Pregunta.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/modules/tienda/preguntas.js",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/publicaciones/preguntas.vue",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/Infochannel/Tienda/PreguntaController.php",
+		"/home/jdcc/projectsweb/infochannel/app/Notifications/notificarPregunta.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/publicaciones/ListPublicaciones.vue",
+		"/home/jdcc/projectsweb/infochannel/app/Listeners/preguntaRespondida.php",
+		"/home/jdcc/projectsweb/infochannel/app/Jobs/ChequearOrdenPago.php",
+		"/home/jdcc/projectsweb/infochannel/app/Notifications/NotificarRespuestaPregunta.php",
+		"/home/jdcc/projectsweb/infochannel/app/Listeners/verificarOrdenPago.php",
+		"/home/jdcc/projectsweb/infochannel/app/Events/preguntaRespondida.php",
+		"/home/jdcc/projectsweb/infochannel/app/Listeners/informarPregunta.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/hotel/tienda/list.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/components/MouseHover.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/hotel/resultados.vue",
+		"/home/jdcc/projectsweb/infochannel/database/migrations/2021_04_21_161358_create_preguntas_table.php",
+		"/home/jdcc/projectsweb/infochannel/app/Events/preguntaGenerada.php",
+		"/home/jdcc/projectsweb/infochannel/node_modules/vue-zoom/src/Zoom.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/components/mZoom.vue",
+		"/home/jdcc/projectsweb/infochannel/node_modules/vue-h-zoom/dist/vue-h-zoom.js",
+		"/home/jdcc/projectsweb/infochannel/node_modules/@babel/types/scripts/generators/generateAsserts.js",
+		"/home/jdcc/projectsweb/infochannel/resources/js/app.js",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/publicaciones/form.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/sass/app.scss",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/tienda/FiltroTienda.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/modules/producto/categoria.js",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/ProductoController.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/publicaciones/modificar.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/modules/producto/producto.js",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/publicaciones/untitled.js",
+		"/home/jdcc/projectsweb/infochannel/resources/js/components/FilterPublicacion.vue",
+		"/home/jdcc/projectsweb/infochannel/node_modules/jquery-ui/external/jquery-1.10.0/jquery.js",
+		"/home/jdcc/projectsweb/infochannel/resources/views/vendor/adminlte/master.blade.php",
+		"/home/jdcc/projectsweb/infochannel/public/manifest.json",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Filesystem.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/symfony/http-foundation/File/UploadedFile.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Http/UploadedFile.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Support/Facades/File.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithInput.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Http/FileHelpers.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Http/Request.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/publicaciones/create.vue",
+		"/home/jdcc/projectsweb/infochannel/routes/web.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Hotel/Publicacion.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/negocio/certificados/CertificadoForm.vue",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Tienda/ProductoColor.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/modules/tienda/modelo.js",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/Infochannel/Tienda/MarcaController.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/color/ListColores.vue",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/Infochannel/Tienda/ColorController.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Tienda/Color.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/color/edit.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/color/create.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/color/form.vue",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php",
+		"/home/jdcc/projectsweb/infochannel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasRelationships.php",
+		"/home/jdcc/projectsweb/infochannel/database/migrations/2021_04_11_202735_create_producto_colors_table.php",
+		"/home/jdcc/projectsweb/infochannel/database/migrations/2021_04_11_201956_create_colors_table.php",
+		"/home/jdcc/projectsweb/infochannel/database/migrations/2021_04_11_150647_update_productos_table.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/modules/tienda/servicio.js",
+		"/home/jdcc/projectsweb/infochannel/resources/sass/_variables.scss",
+		"/home/jdcc/projectsweb/infochannel/resources/sass/_import.scss",
+		"/home/jdcc/projectsweb/infochannel/database/migrations/2021_04_10_164739_create_publicaciones_table.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/marcas/Marcas.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/modelos/form.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/modelos/ListModelos.vue",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Tienda/Modelo.php",
+		"/home/jdcc/projectsweb/infochannel/app/Http/Controllers/Infochannel/Tienda/ModeloController.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/modelos/Modelos.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/modelos/edit.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/modelos/create.vue",
+		"/home/jdcc/projectsweb/infochannel/database/migrations/2021_04_10_100700_create_modelos_table.php",
+		"/home/jdcc/projectsweb/infochannel/app/Models/Infochannel/Tienda/Marca.php",
+		"/home/jdcc/projectsweb/infochannel/resources/js/store/modules/tienda/marcas.js",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/marcas/create.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/marcas/form.vue",
+		"/home/jdcc/projectsweb/infochannel/resources/js/views/admin/tienda/marcas/edit.vue"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 376.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/js/views/home.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Vuejs Complete Package/vue.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "database/seeders/UserSeeder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								381,
+								381
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1108,
+										1109
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										282,
+										283
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 310.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "vendor/spatie/laravel-permission/src/Models/Role.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								423,
+								423
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "vendor/spatie/laravel-permission/src/Traits/HasPermissions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9694,
+								9694
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content
