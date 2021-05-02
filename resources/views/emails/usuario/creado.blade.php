@@ -1,21 +1,29 @@
 @component('mail::message')
-# Hola **{{ $Nombre }}**.  
-> Ha recibido una invitacion a formar parte del **Sistema InverAgro**, y queremos darte ¡la mas cordial bienvenida!  
 
-> Te ha sido asignado un usuario con el rol de **{{ $Rol }}**.  
+# Welcome **{{ $Nombre }}**.  
+> You've received authorization to enter the **Fernando Aguilar** Photo System and view your exclusive photographs.
 
-> Para ingresar al sistema solo debes crear una contraseña, y validar tu email registrado **{{ $Email }}** en el que recibirás un correo explicativo con instrucciones.  
+> Your access credentials are: 
 
-## ¡Felicidades! ##  
+>>User: **{{ $Email }}**
 
 @component('mail::button', ['url' => $Url, 'color' => 'success'])
-	Establecer Contrase&ntilde;a
+	Please set your password below.
 @endcomponent  
 
-> Para la aclaracion de cualquier duda, cuentas con asistencia y soporte con el equipo de InverAgro.  
-<a href="mailto:megajdcc2009@gmail.com ?subject=Soporte Inver Agro">Soporte Inver Agro</a>  
-Gracias por tu preferencia.  
+## See you inside! ##  
 
-El equipo de InverAgro.  
-&copy; {{ date('Y') }} InverAgro. Todos los derechos Reservados.
+
+# Hola **{{ $Nombre }}**.  
+> Has recibido autorización para ingresar al sistema de fotos de **Fernando Aguilar**, y ver sus fotografías exclusivas  
+
+>Tus credenciales son:
+
+>>Usuario:**{{ $Email }}**  
+
+@component('mail::button', ['url' => $Url, 'color' => 'success'])
+	Por favor establezca su contraseña a continuación
+@endcomponent  
+
+&copy; {{ date('Y') }} Fernando Aguilar. All rights reserved.
 @endcomponent

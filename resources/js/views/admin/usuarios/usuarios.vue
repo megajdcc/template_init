@@ -83,7 +83,7 @@
 		data(){
 			return{
 
-				titulo:'Usuarios InverAgro',
+				titulo:'Todos los Usuarios',
 				busqueda:'',
 				shownewAdministrador:false,
 				showDialog:false,
@@ -95,7 +95,7 @@
 						},
 						buttons:['csv','pdf'],
 						// dom:"tr<'row vdtnet-footer'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7' pl>>",
-						responsive:true,
+						responsive:false,
 						processing:true,
 						searching:true,
 						searchDelay:1500,
@@ -108,6 +108,12 @@
 						scrollY:300,
 						paging:false,
 						autoWidth:true,
+						colReorder:{
+							enable:false
+						},
+
+						select:false,
+						selectCheckbox:0,
 					},
 
 				data:{
@@ -157,7 +163,7 @@
 
 			eliminarUsuario(data){
 
-				axios.delete('/usuario/'+data.id).then(respon => {
+				axios.delete('/usuarios/'+data.id).then(respon => {
 
 						if(respon.data.success){
 							this.$notify({
@@ -184,7 +190,7 @@
 
 		watch:{
 			usuarios(){
-				this.$refs.table.reload();
+				// this.$refs.table.reload();
 			}
 		}
 

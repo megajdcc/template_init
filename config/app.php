@@ -175,9 +175,15 @@ return [
         App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,  
-        Spatie\Permission\PermissionServiceProvider::class
+        Spatie\Permission\PermissionServiceProvider::class,
 
- 
+        
+        // image.intervention
+        Intervention\Image\ImageServiceProvider::class,
+
+        // Zipper
+        Madnest\Madzipper\MadzipperServiceProvider::class
+
 
     ],
 
@@ -229,7 +235,9 @@ return [
         'Str' => Illuminate\Support\Str::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class
+        'View' => Illuminate\Support\Facades\View::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Madzipper' => Madnest\Madzipper\Madzipper::class
 
     ],
 

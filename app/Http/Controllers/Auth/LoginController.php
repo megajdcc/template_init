@@ -88,12 +88,11 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user)
     {
         
-        // $user->conectado = true;
-        // $user->save();
-        
-        broadcast(new UsuarioConectado($user))->toOthers();
-        
-        return redirect()->route('home');
+      if($user->rol->name == 'Super Administrador'){
+            return redirect()->route('home');
+        }else{
+            return redirect('/tienda');
+        }
     }
 
 
@@ -116,13 +115,11 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
 
-        broadcast(new UsuarioDesconectado(Auth::user()));
+        // broadcast(new UsuarioDesconectado(Auth::user()));
         // session()->forget('negocio');
         // session()->forget('hotel');
 
         $this->guard()->logout();
-
-
 
         $request->session()->invalidate();
 
@@ -142,6 +139,5 @@ class LoginController extends Controller
 
        
     }
-
 
 }

@@ -57,6 +57,41 @@ return [
             'url' => env('APP_URL').'/storage/observaciones/adjuntos',
             'visibility' => 'public'
         ],
+
+         'marca_agua' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/marca_agua'),
+            'url' => env('APP_URL').'/storage/marca_agua',
+            'visibility' => 'public'
+        ],
+
+        'fotos_originales' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/imagenes/originales'),
+            'url' => env('APP_URL').'/storage/imagenes/originales',
+            'visibility' => 'public'
+        ],
+
+         'fotos_con_marcas' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/imagenes/conmarcas'),
+            'url' => env('APP_URL').'/storage/imagenes/conmarcas',
+            'visibility' => 'public'
+        ],
+
+        'ventas' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/ventas'),
+            'url' => env('APP_URL').'/storage/ventas',
+            'visibility' => 'public'
+        ],
+
+        'archivos_zip' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/zips'),
+            'url' => env('APP_URL').'/storage/zips',
+            'visibility' => 'public'
+        ],
         
 
 

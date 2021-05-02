@@ -102,6 +102,7 @@ import VueGauge from 'vue-gauge';
 Vue.component('vue-gauge',VueGauge);
 
 
+
 // Bootstrap-vue
 
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';

@@ -25,6 +25,10 @@ try {
 	require('datatables.net-buttons/js/buttons.print.js');
 	require('datatables.net-buttons/js/dataTables.buttons.min.js');  
 	require('datatables.net-responsive-bs4');
+
+
+	var tether = require('tether');
+
 		
 } catch (e) {}
 
@@ -41,6 +45,11 @@ try{
 }catch(e){
 
 }
+
+
+window.Swal = require('sweetalert2');
+
+
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Observacion;
+use App\Models\{Observacion, User};
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\{DB, Hash, Storage, File, Auth};
+use Illuminate\Support\Facades\{DB, Hash, Storage, File, Auth,Notification};
 use Carbon\Carbon;
-use App\Events\ObservacionModulo;
+use Illuminate\Database\Eloquent\Builder;
+use App\Notifications\nuevaObservacion;
+
 
 class ObservacionController extends Controller
 {
@@ -65,7 +67,15 @@ class ObservacionController extends Controller
                     'usuario_id' => $datos['usuario_id']
                 ]);
 
-                broadcast(new ObservacionModulo($observacion));
+
+                $administradores = User::whereHas('rol',function(Builder $query){
+                    return $query->where('name','Super Administrador');
+                })->get();
+
+
+                Notification::send($administradores,new nuevaObservacion($observacion));
+
+                // broadcast(new ObservacionModulo($observacion));
 
 
             DB::commit();
@@ -204,7 +214,7 @@ class ObservacionController extends Controller
 
                                 $btn .= '<button type="button" class="btn btn-outline-danger" data-action="eliminar" title="Eliminar Observación"><i class="fas fa-trash"></i></button>';
 
-                                return '<div class="btn-group btn-group-sm">'.$btn.'</div>';
+                                return '<div class="">'.$btn.'</div>';
 
                             })
                             ->rawColumns(['action'])

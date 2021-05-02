@@ -34,7 +34,7 @@
 								</div>
 
 								<div class="form-group" :class="{'has-danger' : errors.telefono}">
-											<label for="telefono">Teléfono | <span class="required">*</span></label>
+											<label for="telefono">Teléfono</label>
 											<div class="input-group">
 												
 												 <the-mask type="tel" placeholder="Phone: +584128505504"  title="Es necesario el código de pais telefónico: +000 y despues el resto del número, si su Pais tiene dos digitos, como código, inicie siempre con 0 para completar" data-toggle="tooltip" class="form-control form-control-sm" :class="{'is-invalid' : errors.telefono}" v-model="formulario.telefono" :mask="masks" :masked="masked" :hexTokens="regEspecial" />
@@ -67,6 +67,22 @@
 
 											</div>
 								</div>
+
+								<div class="form-group">
+									<label for="rol">Albumes a asignar</label>
+									<div class="input-group">
+										
+										<el-select v-model="formulario.albumes" filterable placeholder="Seleccione" size="small"  class="w-100" multiple clearable>
+											<el-option v-for="album in albumes" :key="album.id"  :value="album.id" :label="album.nombre"></el-option>
+										</el-select>
+
+										<div class="invalid-feedback d-flex" role="alert" v-if="errors.albumes_asignados">
+											<strong v-text="errors.albumes[0]"></strong>
+										</div>
+
+									</div>
+								</div>
+
 
 						
 								<div class="form-group" :class="{'has-danger': errors.email}">
@@ -149,6 +165,7 @@
 						rol_id          :'',
 						rol             :null,
 						avatar          :'',
+						albumes:[]
 					},
 				
 					PickerOptions:{
@@ -179,6 +196,7 @@
 				...mapState(['errors','loading']),
 				...mapState('rol',['roles']),
 				...mapGetters('usuario',['draft']),
+				...mapState('album',['albumes']),
 
 				masks(){
 						return this.mask.split('|');
@@ -246,10 +264,8 @@
 	         			}
 
 	         		}).catch(e => {
-	         			console.log(e);
-
 	         			if(e.response.status === 422){
-	         				this.$store.commit('setError',respon.data.errors)
+	         				this.$store.commit('setError',e.response.data.errors)
 	         			}else{
 	         				console.log(e);
 	         			}

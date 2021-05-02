@@ -10,7 +10,8 @@ use App\Models\User;
 
 use App\Mail\UsuarioCreado;
 
-class WelcomeUsuario extends Notification implements ShouldQueue{
+class WelcomeUsuario extends Notification implements ShouldQueue
+{
     
     use Queueable;
 
@@ -60,7 +61,7 @@ class WelcomeUsuario extends Notification implements ShouldQueue{
     public function toArray($notifiable){
         return [
             'titulo' => 'Bienvenido a '.env('APP_NAME'),
-            'mensaje' => 'Hola '.$this->usuario->nombre. ' '.$this->usuario->Apellido.'! Bienvenido a la familia de '.env('APP_NAME'),
+            'mensaje' => 'Hola '.$this->usuario->nombre. ' '.$this->usuario->Apellido.'! Bienvenido a '.env('APP_NAME'),
                'btn'     => false,
                'url' => '',
              ];

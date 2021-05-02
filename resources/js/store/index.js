@@ -11,13 +11,11 @@ import usuario from './modules/usuario';
 
 import observaciones from './modules/configuracion/observaciones.js';
 
-
 // Configuracion 
 
 import rol from './modules/configuracion/rol.js';
 
 import permiso from './modules/configuracion/permiso.js';
-
 
 
 // Notificaciones
@@ -28,6 +26,26 @@ import notificacion from './modules/notificaciones.js';
 
 import chat from './modules/chat.js';
 
+
+// Configuracion
+// 
+import configuracion from './modules/configuracion/configuracion.js';
+
+
+// Albumes y Fotos
+
+import album from './modules/album/album.js';
+import foto from './modules/album/foto.js';
+
+// Ventas
+
+import venta from './modules/venta/venta.js';
+
+
+// Tableros 
+
+import AdminTablero from './modules/tableros/AdminTablero.js';
+import UserTablero from './modules/tableros/UserTablero.js';
 /***************************************************/
 
 export default new Vuex.Store({
@@ -88,7 +106,13 @@ modules:{
 		notificacion,
 		chat,
 		observaciones,
-		permiso
+		permiso,
+		configuracion,
+		album,
+		foto,
+		venta,
+		'admin-tablero':AdminTablero,
+		'user-tablero':UserTablero
 		
 },
 

@@ -6,11 +6,8 @@ use App\Models\User;
 use App\Models\Rol;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Notification;
-
-Use App\Notifications\WelcomeUsuario;
-
+use App\Notifications\WelcomeUsuario;
 use Illuminate\Support\Facades\{Hash,Auth,File,Storage,Validator,DB};
-
 use Illuminate\Validation\Rule;
 use Carbon\Carbon;
 
@@ -103,6 +100,7 @@ class UserController extends Controller
             'direccion' => $datos['direccion'],
             'password'  => Hash::make('20464273jd'),
             'fecha_nacimiento' => (isset($datos['fecha_nacimiento'])) ? $datos['fecha_nacimiento'] : null ,
+            'albumes' => json_encode($datos['albumes'])
         ]);
 
         $usuario->assignRole($datos['rol_id']);
@@ -117,27 +115,26 @@ class UserController extends Controller
         $datos = $request->validate([
             'nombre'           => 'required|string|min:2',
             'apellido'         => 'required|string|min:2',
-            'telefono'         => 'required|unique:users,telefono',
+            'telefono'         => 'nullable',
             'rol_id'           => 'required|exists:roles,id',
             'email'            => 'required|email|unique:users,email',
             'direccion'        => 'nullable',
             'fecha_nacimiento' => 'nullable',
+            'albumes'        => 'required'
 
         ],[
-            'nombre.required'          => 'El nombre es importante',
-            'nombre.string'            => 'El nombre no es valido',
-            'apellido.required'          => 'El apellido es importante',
-            'apellido.string'            => 'El apellido no es valido',
-            'apellido.min'               => 'El apellido debe tener al menos de dos caracteres',
-            'nombre.min'               => 'El nombre debe tener al menos de dos caracteres',
-
-            'telefono.required'             => 'Este campo es obligatorio',
-            'telefono.unique'               => 'El teléfono ya lo esta utilizando otro usuario, debe ser único',
-            'rol_id.required'                  => 'Este campo es obligatorio',
-            'rol_id.exists'                    => 'El rol no existe verifique',
-            'email.required'                => 'Este campo es obligatorio',
-            'email.email'                   => 'El email no es valido por favor verifique',
-            'email.unique'                  => 'El email debe ser único ya otro usuario lo esta usando.',
+            'nombre.required'   => 'El nombre es importante',
+            'nombre.string'     => 'El nombre no es valido',
+            'apellido.required' => 'El apellido es importante',
+            'apellido.string'   => 'El apellido no es valido',
+            'apellido.min'      => 'El apellido debe tener al menos de dos caracteres',
+            'nombre.min'        => 'El nombre debe tener al menos de dos caracteres',
+            'rol_id.required'   => 'Este campo es obligatorio',
+            'rol_id.exists'     => 'El rol no existe verifique',
+            'email.required'    => 'Este campo es obligatorio',
+            'email.email'       => 'El email no es valido por favor verifique',
+            'email.unique'      => 'El email debe ser único ya otro usuario lo esta usando.',
+            'albumes.required' => 'El usuario necesita tener aunque sea un álbum asignados'
 
         ]);
 
@@ -175,10 +172,11 @@ class UserController extends Controller
         $datos = $request->validate([
             'nombre'    => 'required|string|min:2',
             'apellido'  => 'required|string|min:2',
-            'telefono'  => ['bail','required',Rule::unique('users','telefono')->ignore($usuario)],
-            'rol_id'       => 'required|exists:roles,id',
-            'email'     => ['bail','required',Rule::unique('users','email')->ignore($usuario)],
+            'telefono'  => ['required',Rule::unique('users','telefono')->ignore($usuario)],
+            'rol_id'    => 'required|exists:roles,id',
+            'email'     => ['required',Rule::unique('users','email')->ignore($usuario)],
             'direccion' => 'nullable',
+            'albumes'   => 'required',
 
         ],[
             'nombre.required'   => 'El nombre es importante',
@@ -194,6 +192,7 @@ class UserController extends Controller
             'email.required'    => 'Este campo es obligatorio',
             'email.email'       => 'El email no es valido por favor verifique',
             'email.unique'      => 'El email debe ser único ya otro usuario lo esta usando.',
+             'albumes.required' => 'El usuario necesita tener aunque sea un álbum asignados'
         ]);
 
         $usuario->removeRole($usuario->rol);
@@ -203,12 +202,15 @@ class UserController extends Controller
         $usuario->rol_id    = $datos['rol_id'];
         $usuario->email     = $datos['email'];
         $usuario->direccion = $datos['direccion'];
+        $usuario->albumes = json_encode($datos['albumes']);
     
         try{
             DB::beginTransaction();
-            $usuario->assignRole($datos['rol_id']);
+           
             $usuario->save();
-
+            
+            $usuario->assignRole($datos['rol_id']);
+            
             DB::commit();
 
             $usuario->rol;
@@ -224,6 +226,7 @@ class UserController extends Controller
             }
 
             $usuario->chats = $chats;
+            $usuario->albumes = json_decode($usuario->albumes);
 
             $result = true;
         }catch(Exception $e){
@@ -301,10 +304,8 @@ class UserController extends Controller
                                     return ($usuario->rol) ? $usuario->rol->name : 'Usuario';
                                 })
                                 ->addColumn('creado',function($row){
-
                                     return $row->created_at->format('d M \d\e Y H:i:s');
                                 })
-                                
 
                                 ->addColumn('action',function($row){
                                     $btn = '<button type="button" class="btn btn-outline-primary" title="Editar Usuario" data-toggle="tooltip" data-action="editarUsuario"><i class="fas fa-edit"></i></button>';
@@ -346,7 +347,11 @@ class UserController extends Controller
 
         if(Auth::attempt($credenciales)){
 
-            return redirect()->intended('home');
+            if($usuario->rol->name == 'Super Administrador'){
+                return redirect()->route('home');
+            }else{
+                return redirect('/tienda');
+            }
 
         }
     }
@@ -476,6 +481,7 @@ class UserController extends Controller
                 'avatar'           => asset('storage/img-perfil/'.$usuario->imagen),
                 'fecha_nacimiento' => $usuario->fecha_nacimiento,
                 'id'               => $usuario->id,
+                'albumes' => ($usuario->albumes) ? json_decode($usuario->albumes) : [],
         ];
         return response()->json($datos);
     }
@@ -489,5 +495,116 @@ class UserController extends Controller
 
         return response()->json($data);
     }
+
+
+    public function pushCarrito(Request $request,User $usuario){
+        $data = $request->validate([
+            'id' => 'required',
+        ]);
+
+        try{
+            DB::beginTransaction();
+
+            $usuario->fotoInCarrito()->attach($data['id']);
+
+            $foto = $usuario->fotoInCarrito->last();
+
+            DB::commit();
+            $result = true;
+        }catch(Excelption $e){
+            DB::rollBack();
+            $result = false;
+        }
+
+
+        return response()->json(['success' => $result,'foto' => ($result) ? $foto : null]);
+
+    }
+
+
+
+    public function putCarrito(Request $request,User $usuario){
+        $data = $request->validate([
+            'id' => 'required',
+        ]);
+
+        try{
+            DB::beginTransaction();
+
+            // dd($data['id']);
+
+            $usuario->fotoInCarrito()->detach($data['id']);
+
+            DB::commit();
+            $result = true;
+        }catch(Excelption $e){
+            DB::rollBack();
+            $result = false;
+        }
+
+
+        return response()->json(['success' => $result]);
+
+    }
+
+
+
+    public function listCarrito(){
+
+        $fotos = Auth::user()->fotoInCarrito;
+
+        return \DataTables::of($fotos)
+                            ->addIndexColumn()
+                            
+                            ->addColumn('imagen',function($row){
+                                return '<img style="width:140px; height:auto !important" src="'.$row->foto_con_marca.'" alt="'.$row->foto_con_marca.'" class="elevation-1">';
+                            })
+
+                            ->addColumn('album',function($row){
+                                return $row->album->nombre;
+                            })
+                            
+                            ->addColumn('precio_unitario', function($row){
+                                return '$ '.number_format((float)$row->precio,2,',','.').' USD';
+                            })
+                            
+                            ->addColumn('cantidad', function($row){
+                                return '1 Unit';
+                            })
+
+                             ->addColumn('total', function($row){
+                                 return '$ '.number_format((float)$row->precio,2,',','.').' USD';
+                            })
+
+                            ->addColumn('actions', function($row){
+                                $btn = '<button type="button" data-action="quitarItem" title="Eliminar del carrito" data-toggle="tooltip" class="btn btn-outline-danger rounded-circle"><i class="fas fa-trash"></i></button>';
+
+                                return '<div class="btn-group btn-group-sm">'.$btn.'</div>';
+                            })
+                            ->setRowClass('row-table')
+                            ->rawColumns(['imagen','actions'])
+                            ->make(true);
+
+    }
+
+
+    
+    public function revisarSiguienteNivel(Request $request){
+
+            $datos = $request->validate([
+                'opcion_eleccion' => 'required',
+                'email'           => 'bail|required_if:opcion_eleccion,1',
+                
+            ],[
+                'opcion_eleccion.required' => 'La opción es importante no la olvides',
+                'email.required_if'        => 'El correo electrónico es importante, no lo olvides',
+                'email.email'              => 'El correo electrónico no es valido, verifique',
+            ]);
+
+        return response()->json(['success' => true]);
+
+    }
+
+
 
 }

@@ -43,9 +43,9 @@
 	<el-dialog :title="dnotification.data.titulo" 
 					:visible.sync="showNotification"
 					width="50%"
-					:close-on-click-modal="false"
+					:close-on-click-modal="true"
 					:modal="false"
-					:show-close="false"
+					:show-close="true"
 					@close='cerrarNotification'
 					>
 
@@ -54,6 +54,7 @@
 						<div class="btn-group d-flex justify-content-end">
 							<button type="button" class="btn btn-outline-danger" @click.prevent="cerrar()">Cerrar Notificación</button>
 							<button type="button" class="btn btn-outline-primary" @click.prevet="irAction()" v-if="isBtnAction">{{ dnotification.data.btnTitle }}</button>
+							<button type="button" class="btn btn-outline-dark" @click="leida()"><i class="fas fa-eye mr-2"></i>Marcar como leida</button>
 							<!-- <a v-if="dnotification.data.btn" :href="dnotification.data.url" :title="dnotification.data.btnTitle" class="btn btn-outline-primary">{{ dnotification.data.btnTitle }}</a> -->
 						</div>
 	</el-dialog>
@@ -147,26 +148,31 @@
 				},
 
 				cerrarNotification(){
-
-					this.marcarLeida({usuario: this.usuario.id, notificacion:this.dnotification.id}).then(respo => {
-								if(respo.data.success){
-									this.$notify({
-                              message: 'Notificación leída',
-                              duration:'3000',
-                              type:'info',
-                              position:'top-left',
-                            })
-									
-									this.pushLeida(respo.data.notificacion);
-								}
-
-						}).catch(error =>{
-									console.log(error)
-						}).then(()=>{
-							this.showNotificacion = false
-						});
-
+					this.cerrar();
 				},
+
+
+				leida(){
+					this.marcarLeida({usuario: this.usuario.id, notificacion:this.dnotification.id}).then(respo => {
+							if(respo.data.success){
+								this.$notify({
+                           message: 'Notificación leída',
+                           duration:'3000',
+                           type:'info',
+                           position:'top-left',
+                         })
+								
+								this.pushLeida(respo.data.notificacion);
+								this.cerrar();
+							}
+
+					}).catch(error =>{
+								console.log(error)
+					}).then(()=>{
+						this.showNotificacion = false
+					});
+				}
+
 			},
 
 

@@ -3,6 +3,7 @@ export default {
 	namespaced:true,
 
 	state:() => ({
+			
 			usuario:{
 				id              :null,
 				nombre          :'',
@@ -16,6 +17,8 @@ export default {
 				rol_id          :'',
 				rol             :null,
 				avatar          :'',
+				albumes         :[]
+
 			},
 
 			user:{
@@ -31,6 +34,8 @@ export default {
 				rol_id          :'',
 				rol             :null,
 				avatar          :'',
+				albumes         :[],
+				foto_in_carrito:[],
 			},
 
 			usuarios:[],
@@ -62,23 +67,24 @@ export default {
 		},
 
 		capturarUsuario(state,id_usuario){
-
 			state.user = state.usuarios.find((user) => user.id == id_usuario)
 		},
 
 		clearUsuario(state){
 			state.user = {id              :null,
-									nombre          :'',
-									apellido        :'',
-									telefono        :'',
-									fecha_nacimiento:'',
-									imagen          :'',
-									direccion       :'',
-									email           :'',
-									password        :'',
-									rol_id          :'',
-									rol             :null,
-									avatar          :''}
+							nombre          :'',
+							apellido        :'',
+							telefono        :'',
+							fecha_nacimiento:'',
+							imagen          :'',
+							direccion       :'',
+							email           :'',
+							password        :'',
+							rol_id          :'',
+							rol             :null,
+							avatar          :'',
+							albumes         :[]
+						}
 		},
 
 
@@ -109,6 +115,22 @@ export default {
 
 		updateAvatar(state,avatar){
 			state.usuario.avatar = avatar;
+		},
+
+		pushCarrito(state,foto){
+			state.usuario.foto_in_carrito.push(foto);
+		},
+
+		putCarrito(state,photo){
+
+			let i = state.usuario.foto_in_carrito.findIndex((foto) => foto.id == photo.id);
+			state.usuario.foto_in_carrito.splice(i,1);
+
+		},
+
+
+		updateCarrito(state,carrito){
+			state.usuario.foto_in_carrito = carrito;
 		}
 
 	},
@@ -184,16 +206,23 @@ export default {
 			}
 		},
 
+		getFotoInCarrito:(state) => {
+			return state.usuario.foto_in_carrito;
+		},
 
+		getTotalCarrito(state){
+			let total = 0;
 
+			state.usuario.foto_in_carrito.forEach((foto) => {
+				total = total + Number(foto.precio);
+			});
 
+			return total
+		}
 
 	},
 
 	actions:{
-
-		
-
 
 		cargarUsuarios({state,commit}){
 			var result = false;
@@ -222,7 +251,7 @@ export default {
 		async guardar({state,commit,dispatch},data){
 			
 			if(state.user.id){
-				return await axios.put(`/usuarios/`+state.usuario.id, data);
+				return await axios.put(`/usuarios/`+state.user.id, data);
 			}else{
 				return await axios.post('/usuarios',data);
 			}
@@ -232,6 +261,43 @@ export default {
 		async guardarUsuario({state,commit,dispatch},draft){
 			return await axios.put(`/perfil/update/usuario/`+state.usuario.id, draft);
 		},
+
+
+		agregarAlCarrito({state,commit},foto){
+			
+
+			axios.put(`/usuario/${state.usuario.id}/agregar/carrito`,foto).then(respon => {
+
+				if(respon.data.success){
+
+					commit('pushCarrito', respon.data.foto);
+				
+				}
+
+			}).catch(e => {
+				console.log(e)
+			}).then(() => {
+
+			});
+		},
+
+
+		quitarCelCarrito({state,commit},foto){
+			
+
+			axios.put(`/usuario/${state.usuario.id}/quitar/carrito`,foto).then(respon => {
+
+				if(respon.data.success){
+					commit('putCarrito', foto);
+				}
+
+			}).catch(e => {
+				console.log(e)
+			}).then(() => {
+
+			});
+		}
+
 
 
 

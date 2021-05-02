@@ -4,8 +4,13 @@
 						<ul class="navbar-nav ml-auto flex-row align-items-center">
 								
 								<li class="nav-item">
+									 <carrito-compra></carrito-compra>
+								</li>
+
+								<li class="nav-item">
 									 <notificaciones></notificaciones>
 								</li>
+								
 								<li class="nav-item">
 									<header-user></header-user>
 								</li>
@@ -83,12 +88,14 @@
 import {mapState, mapMutations, mapActions, mapGetters} from 'vuex';
 
 import ChatUser from '../chat.vue';
+import CarritoCompra from '../CarritoCompra.vue';
 
 
 export default{
 		
 		components:{
-			ChatUser
+			ChatUser,
+			CarritoCompra,
 		},
 
 		data(){

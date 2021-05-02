@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\{Auth};
 
-use App\Models\User;
+use App\Models\{User,Venta,Foto,Album};
 
 class HomeController extends Controller
 {
@@ -52,6 +52,8 @@ class HomeController extends Controller
   
         $usuario->chats = $chats;
 
+
+
         return view('home', compact('usuario'));
 
     }
@@ -80,7 +82,9 @@ class HomeController extends Controller
         }
   
         $usuario->chats = $chats;
-
+        $usuario->albumes = ($usuario->albumes) ? json_decode($usuario->albumes) : [];
+        $usuario->fotoInCarrito;
+        
         return response()->json($usuario);
         
     }
@@ -99,8 +103,37 @@ class HomeController extends Controller
     }
 
 
+    public function tableroAdmin(){
+
+        $result = collect([
+            'total_ventas' => Venta::get()->sum('monto'),
+            'cantidad_fotos' => Foto::get()->count(),
+            'cantidad_albums' => Album::get()->count(),
+            'cantidad_usuarios' => User::get()->count()
+        ]);
+
+        return response()->json($result);
+    }
+
+     public function tableroUser(){
+
+        $compras = Auth::user()->compras;
 
 
+        $fotos_compradas = 0;
 
+        foreach ($compras as $key => $compra) {
+            $fotos = json_decode($compra->fotos);
+            $fotos_compradas += count($fotos);
+        }
+
+        $result = collect([
+            'total_compras' => Auth::user()->compras->count(),
+            'fotos_compradas' => $fotos_compradas,
+            'cantidad_albumes' => (Auth::user()->rol->name != 'Super Administrador') ? Auth::user()->AlbumesAsignados()->count() : 0,
+        ]);
+
+        return response()->json($result);
+    }
 
 }

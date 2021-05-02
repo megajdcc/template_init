@@ -36,7 +36,7 @@
 
 
 									<div class="form-group" :class="{'has-danger' : errors.telefono}">
-											<label for="telefono">Celular | <span class="required">*</span></label>
+											<label for="telefono">Celular</label>
 											<div class="input-group">
 												
 												<the-mask type="tel" placeholder="Número de celular" class="form-control form-control-sm" :class="{'is-invalid' : errors.telefono}" v-model="draft.telefono" :mask="masks" :masked="masked" />
@@ -52,7 +52,7 @@
 
 									<div class="form-group" :class="{'has-danger' : errors.fecha_nacimiento}">
 											
-											<label for="fechanacimiento">Fecha de nacimiento | <span class="required">*</span></label>
+											<label for="fechanacimiento">Fecha de nacimiento</label>
 
 											<div class="input-group date" id="datetimepicker3" data-target-input="nearest">
 												
@@ -83,7 +83,7 @@
 									</div>
 
 							<div class="form-group" :class="{'has-danger': errors.direccion}">
-										<label for="direccion">Dirección | <span class="required">*</span> </label>
+										<label for="direccion">Dirección</label>
 										<div class="input-group">
 											
 											<textarea v-model="draft.direccion" class="form-control form-control-sm" :class="{'in-invalid' : errors.direccion}" placeholder="Dirección..."></textarea>

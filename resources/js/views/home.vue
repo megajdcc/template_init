@@ -1,20 +1,33 @@
 <template>
-
-	<div class="" v-loading="loading" element-loading-spinner="spinner-grow">
-			<h2>Este es el home de PhotoStore</h2>
+	<div>
+		<tablero-admin v-if="isAdmin"></tablero-admin>
+		<tablero-user v-else></tablero-user>
 	</div>
-
-
 </template>
 
 <script>
-	import {mapState} from 'vuex';
+
+	import { mapState,mapGetters } from 'vuex';
+	import TableroAdmin from './TableroAdmin.vue';
+	import TableroUser from './TableroUser.vue';
 
 	export default{
-	
+		
+		components:{
+			TableroAdmin,
+			TableroUser
+		},
+
 		computed:{
 			...mapState(['loading']),
 			...mapState('usuario',['usuario']),
+
+
+			isAdmin(){
+				if(this.usuario.id){
+					return (this.usuario.rol.name == "Super Administrador");
+				}
+			}
 		}
 	
 	}

@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
     public function run()
     {
 
-            $permisos = ['Gestionar usuarios','Ver configuracion','Gestionar roles y permisos'];
+            $permisos = ['Gestionar usuarios','Ver configuracion','Gestionar roles y permisos','Gestionar albumes y fotos','Gestionar observaciones'];
 
             $permisos_registrados = collect([]);
 

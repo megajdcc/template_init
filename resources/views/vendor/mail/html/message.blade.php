@@ -3,7 +3,7 @@
 	@slot('header')
 		@component('mail::header', ['url' => config('app.url')])
 		{{-- {{ config('app.name') }} --}}
-		<img src="{{ asset('/storage/logotipo.jpg') }}" class="logotipo_mail" alt="{{ env('APP_NAME') }}" style="width:169px; height:50px">
+		<img src="{{ asset('/storage/logotipo.png') }}" class="logotipo_mail" alt="{{ env('APP_NAME') }}" style="width:auto; height:80px">
 		@endcomponent
 	@endslot
 

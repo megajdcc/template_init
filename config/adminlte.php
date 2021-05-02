@@ -131,7 +131,7 @@ return [
     'classes_content_header' => '',
     'classes_content' => '',
     'classes_sidebar' => 'sidebar-light-primary elevation-3',
-    'classes_sidebar_nav' => 'nav-compact nav-legacy',
+    'classes_sidebar_nav' => 'nav-compact nav-flat',
     'classes_topnav' => 'navbar-white elevation-1', 
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
@@ -194,22 +194,14 @@ return [
     */
 
 
-    'use_route_url' => false,
-
-    'dashboard_url' => 'home',
-
-    'logout_url' => 'logout',
-
-    'login_url' => 'login',
-
-    'register_url' => '/register',
-
+    'use_route_url'      => false,
+    'dashboard_url'      => 'home',
+    'logout_url'         => 'logout',
+    'login_url'          => 'login',
+    'register_url'       => '',
     'password_reset_url' => 'password/reset',
-
     'password_email_url' => 'password/email',
-
-    'profile_url' => false,
-
+    'profile_url'        => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -257,13 +249,48 @@ return [
             ]
 
         ],
+
+        [
+            'text'   => 'Álbumes y Fotos',
+            'icon'   => 'fas fa-camera-retro',
+             'active' => ['/albums','/albums/create/','/albums/*/show/fotos'],
+            'can'    => 'Gestionar albumes y fotos',
+            'url'    => 'albumes',
+            'exact'  => true,
+        ],
+
+        [
+            'text'   => 'Tienda de fotos',
+            'icon'   => 'fas fa-camera-retro',
+            'active' => ['/tienda'],
+            'can'    => 'Ver tienda de fotos',
+            'url'    => 'tienda',
+            'exact'  => true,
+        ],
+
+        [
+            'text'   => 'Mis compras',
+            'icon'   => 'fas fa-store',
+            'active' => ['/compras'],
+            'can'    => 'Ver mis compras',
+            'url'    => 'compras',
+            'exact'  => true,
+        ],
       
-         [
+        [
             'text' => 'Configuración',
             'icon' => 'fas fa-cog',
             'can' => 'Ver configuracion',
             'submenu' => [
-
+                    
+                [
+                      'text' => 'Api y marcas de agua',
+                      'url'  =>  'configuracion',
+                      'icon' => 'fas fa-cog',
+                      'exact' => true,
+                      'active' => ['/configuracion/configuracions']
+                ],
+                
                  [
                     'text' => 'Roles',
                     'url'  =>  'configuracion.roles',
@@ -291,7 +318,7 @@ return [
                     'icon'   => 'fas fa-list-ul',
                     'active' => ['observaciones','observaciones/*/show'],
                     'exact'  => false,
-                    'can'    => 'Gestionar observaciones de modulos',
+                    'can'    => 'Gestionar observaciones',
                 ]
 
 
@@ -304,21 +331,15 @@ return [
             'can' => 'Gestionar usuarios'
         ],
         
-    
-        [
-            'text' => 'Perfils',
-            'url'  => '/admin/perfil',
-            'icon' => 'fa fa-address-card',
-            'submenu' => [
-                 [
-                    'text'   => 'Mi Perfil',
-                    'url'    =>  'perfil',
-                    'icon'   => 'fas fa-fw fa-user',
-                    'active' =>['perfil'],
-                    'exact'  => true,
-                ],
-            ],
+        
+         [
+            'text'   => 'Mi Perfil',
+            'url'    =>  'perfil',
+            'icon'   => 'fas fa-fw fa-user',
+            'active' =>['/perfil'],
+            'exact'  => true,
         ],
+
        
     ],
 

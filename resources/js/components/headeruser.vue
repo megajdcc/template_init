@@ -39,7 +39,7 @@
 
 			methods:{
 				cerrarSesion(){				
-						this.$store.dispatch('cerrarSesion')
+					this.$store.dispatch('cerrarSesion')
 				},
 
 			},

@@ -207,16 +207,11 @@ import { mapState, mapActions, mapMutations} from 'vuex';
 					}
 				},
 
-
-				
-
 			},
 
 			methods:{
 				...mapActions('usuario',['cargarUsuario']),
 				...mapMutations('usuario',['setTelefono','updateAvatar']),
-
-
 
 				async changePassword(){
 					
@@ -258,12 +253,8 @@ import { mapState, mapActions, mapMutations} from 'vuex';
 						this.$store.commit('toggleLoading');
 					})
 				},
+
 			},
-
-
-
-
-
 	}
 
 </script>

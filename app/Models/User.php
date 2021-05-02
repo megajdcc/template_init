@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
+
+use App\Models\Album;
+
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
@@ -27,6 +30,7 @@ class User extends Authenticatable
         'email',
         'password',
         'rol_id',
+        'albumes',
         'is_password'
     ];
 
@@ -104,5 +108,36 @@ class User extends Authenticatable
     public function getNombreCompleto(){
        return $this->nombre . ' '. $this->apellido;
     }
+
+
+    /**
+     * Un Usuario(Administrador del sistema) puede tener muchos Albumes que hayan sido creado por el .
+     */
+    public function Albumes(){
+        return $this->hasMany('App\Models\Album','usuario_id','id');
+    }
     
+    public function AlbumesAsignados(){
+        $albumes = json_decode($this->albumes);
+        $albumes = Album::whereIn('id',$albumes)->get();
+        return $albumes;
+    }
+
+
+    /**
+     * Un usuario puede tener muchas fotos en el carrito de compra o ninguna
+     * @return [Illuminate\Database\Eloquent\Collection] [Una Collection de fotos que el usuario haya elegido...]
+     */
+    public function fotoInCarrito(){
+        return $this->belongsToMany('App\Models\Foto','carritos','usuario_id','foto_id')->withPivot(['created_at']);
+    }
+
+    /**
+     * Un usuario puede comprar muchas fotos...
+     * @return [Illuminate\Database\Eloquent\Collection] [Una collection de Ventas que le hayan hecho a este usuario]
+     */
+    public function compras(){
+        return $this->hasMany('App\Models\Venta','comprador_id','id');
+    }
+
 }

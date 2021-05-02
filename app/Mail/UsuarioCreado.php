@@ -38,7 +38,7 @@ class UsuarioCreado extends Mailable implements ShouldQueue
 
 
         return $this->markdown('emails.usuario.creado')
-                    ->subject('Bienvenido a InverAgro '.$this->usuario->nombre. ' ' . $this->usuario->apellido)
+                    ->subject('Bienvenido a la tienda de fotos '.$this->usuario->nombre. ' ' . $this->usuario->apellido)
                     ->with([
                         'Nombre' => $this->usuario->nombre . ' ' . $this->usuario->apellido,
                         'Rol'    => $rol_name,
